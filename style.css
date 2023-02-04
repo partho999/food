@@ -1,0 +1,357 @@
+/* =======================================================================
+   						This is the	Google font 'Poppins'
+   =======================================================================  */
+
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* =======================================================================
+   						This is the	Basic CSS  
+   =======================================================================  */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+ul{
+	list-style: none;
+	padding: 0;
+   margin: 0;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
+a, p{
+	padding: 0;
+    margin: 0;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+/* -----------------------------------------------
+			Same Design 
+-------------------------------------------------- */
+header, header .navigation li a, .food-side-menu .navigation li a, header.header\.fixed .navigation li a, .fbt, .from-box input[type='submit']{
+	transition:all .4s ease 0s;
+}
+header .navigation li a:hover, header.header\.fixed .navigation li a:hover,.food-side-menu .navigation li a:hover{
+	color: #FF0157;
+}
+/* -----------------------------------------------
+            This is the	Header Area	
+-------------------------------------------------- */
+header{
+	width: 100%;
+	padding: 40px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+}
+header .logo {
+	color: #FFF;
+	font-weight: 700;
+	font-size: 32px;
+}
+header .logo span{
+	color: #FF0157;
+}
+/* -----------------------------------
+        This is the Mobile Icon 
+   ----------------------------------- */
+.mobile {
+    display: none;;
+}
+.mobile .mobile-bar{
+	color: #FFF;
+	font-size: 32px;
+}
+.food-menu-icon {
+	width: 300px;
+	height: 60vh;
+	background: rgba(17, 17, 17, 0.8);
+	text-align: center;
+	padding-bottom: 25px;
+	position: fixed;
+	top: 68px;
+	right: 0;
+	z-index: 1200;
+	overflow: scroll;
+	display: none;
+}
+.bar-icon-close {
+	text-align: end;
+	padding: 15px;
+	color: #FF0157;
+	font-size: 32px;
+	font-weight: 400;
+}
+.food-side-menu .navigation li{
+	margin-left: 30px;
+}
+.food-side-menu .navigation li a{
+	color: #FFF;
+	font-size: 1.6em;
+	font-weight: 300;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 20px 10px;
+}
+/* -----------------------------------
+        This is the Navigation
+   ----------------------------------- */
+header .navigation{
+	position: relative;
+	display: flex;
+}
+header .navigation li{
+	margin-left: 30px;
+}
+header .navigation li a{
+	color: #FFF;
+	font-weight: 300;
+	text-transform: capitalize;
+}
+
+/* ---------------------------------
+	This is the menu add class css
+------------------------------------ */
+header .fixed, header.header\.fixed{
+	background: #FFF;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+header.header\.fixed .logo{ 
+	font-size: 32px;
+	font-weight: 700;
+	color: #111;
+	text-transform: capitalize;
+}
+header.header\.fixed .navigation li a{
+	color: #111;
+	font-weight: 300;
+	text-transform: capitalize;
+}
+/* ---------------------------------
+			This is the Banner
+------------------------------------ */
+.banner{
+	background: url(img/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner .header-text{
+	max-width: 900px;
+	text-align: center;
+}
+.banner .header-text h2{
+	font-size: 80px;
+	color: #fff;
+	text-transform: capitalize;
+}
+.banner .header-text p{
+	font-size: 16px;
+	color: #FFF;
+}
+.fbt{
+	background: #FF0157;
+	color: #FFF;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 20px;
+}
+.fbt:hover{
+	letter-spacing: 6px;
+	color: #FFF;
+	font-weight: 500;
+}
+/* -----------------------------------------------
+            This is the About Section
+-------------------------------------------------- */
+.about{
+	padding: 100px 0;
+}
+.about-head{
+	font-size: 24px;
+	font-weight: 300;
+	color: #111;
+}
+.about-head span{
+	color: #FF0157;
+	font-weight: 700;
+	font-size: 32px;
+}
+/* -----------------------------------------------
+            This is the Menu Section
+-------------------------------------------------- */
+.menu-heading {
+    text-align: center;
+}
+.menu-img{
+	padding: 50px 0 5px;
+}
+h3{
+	font-weight: 400;
+	color: #111;
+}
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.view-btn{
+	text-align: center;
+	margin-bottom: 100px;
+}
+/* -----------------------------------------------
+     This is the Our kitchen Expert Section
+-------------------------------------------------- */
+
+.expert{
+	padding: 50px 0;
+}
+.kitchen-expert{
+	padding:50px 0 5px;
+}
+.card-text:last-child {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+/* -----------------------------------------------
+            This is the testimonials Section
+-------------------------------------------------- */
+.testimonials{
+	background: url(img/bg2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-position: relative;
+	padding: 100px 0;
+}
+.ext {
+    padding-bottom: 50px;
+}
+.ext h2, .ext p{
+	color: #FFF;
+}
+
+
+.card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px 0;
+}
+.test-img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.card-body {
+    padding-top: 40px;
+	text-align: center;
+}
+.card-body p{
+	color: #666;
+	font-style: italic;
+}
+.card-text{
+	color: #FF0157;
+	font-size: 1em;
+	font-weight: 600;
+	margin-top: 20px;
+}
+/* -----------------------------------------------
+            This is the Contact Section
+-------------------------------------------------- */
+.contact{
+	background: url(img/bg3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-position: relative;
+	padding: 100px 0;
+}
+.contact-from{
+	padding: 75px 50px;
+	background: #FFF;
+	box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
+	max-width: 500px;
+	margin-top: 50px;
+}
+.contact-from h3{
+	color: #111;
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-bottom: 20px;
+
+}
+.from-box{
+	width: 100%;
+	margin-bottom: 20px;
+	position: relative;
+}
+.from-box input, .from-box textarea{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 300;
+	color: #111;
+	padding: 10px;
+	border: 1px solid #555;
+	outline: none;
+	resize: none;
+}
+.from-box input[type='submit']{
+	max-width: 100px;
+	background: #FF0157;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+}
+/* -----------------------------------------------
+            This is the Footer Section
+-------------------------------------------------- */
+footer{
+	padding: 8px 40px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+.copy-right p{
+	color: #333;
+}
+.copy-right a{
+	color: #FF0157;
+	font-weight: 500;
+	display: inline-block;
+}
+/* -----------------------------------------------
+            This is the Section
+-------------------------------------------------- */

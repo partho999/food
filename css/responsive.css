@@ -1,0 +1,107 @@
+@media (max-width: 991px) {
+	
+	header, header.header\.fixed{
+		padding: 10px 20px;
+	}
+	.mobile{
+		display: flex;
+	}
+	.menu-top{
+		display: none;
+	}
+	.banner .header-text h2 {
+		font-size: 44px;
+	}
+	.banner .header-text p {
+		width: 100%;
+		padding: 0 20px;
+	}
+	.about,	.testimonials, .contact {
+		padding: 60px 0;
+		text-align: center;
+	}
+	.about-text p{
+		text-align: justify;
+
+	}
+	.about-img {
+		margin-top: 20px;
+	}
+ 
+	.card {
+		padding: 0;
+	}
+	.card-body {
+		padding-top: 0;
+	}
+	.expert {
+		padding: 0;
+	}
+	.kitchen-expert {
+		padding: 20px 0 5px;
+	}
+	.card-2 {
+		padding-top: 15px;
+	}
+	 .cd-2{
+		margin-top: 20px;
+	}
+	
+}
+
+
+	
+
+/* -----------------------------------------------
+			Max Width 768 PX
+-------------------------------------------------- */
+@media (max-width: 768px) {
+	.food-menu-icon {
+		width: 250px;
+	}
+	.food-side-menu .navigation li a{
+		padding: 20px 5px;
+	}
+}
+
+
+
+
+/* -----------------------------------------------
+			Max Width 576 PX
+-------------------------------------------------- */	
+@media (max-width: 576px) {
+	header .logo {
+		font-size: 30px;
+	}
+	header.header\.fixed .logo {
+		font-size: 30px;
+	}
+	.banner .header-text h2 {
+		font-size: 28px;
+		
+	}
+	.banner .header-text p {
+		font-size: 12px;
+	}
+	.fbt {
+		padding: 10px 20px;
+		margin-top: 23px;
+	}
+	.about-head p, .about-text p, .menu-heading p, .card-body p{
+		font-size: 13px;
+		text-align: justify;
+	}
+	.card-text:last-child {
+		font-size: 20px;
+	}
+	.contact-from {
+		margin-top: 25px;
+		padding: 30px 25px;
+	}
+	.about, .testimonials, .contact {
+		padding: 50px 0;
+	}
+	
+	
+}	
